@@ -322,6 +322,247 @@ Negative (%)	0.0%
 Memory size	31.0 KiB
 
 -------------------------------------------------------------
+
+------------------------------------------------------------------------------
+ Analisis del DataSet secuestro:
+------------------------------------------------------------------------------
+Tipo de los datos
+
+FECHA HECHO     object
+COD_DEPTO        int64
+DEPARTAMENTO    object
+COD_MUNI        object
+MUNICIPIO       object
+TIPO DELITO     object
+CANTIDAD         int64
+dtype: object
+------------------------------------------------------------------------------
+Number of variables	7
+	-Categorical	5
+	-Numeric	2
+Number of observations	18642
+Missing cells	0
+Missing cells (%)	0.0%
+Duplicate rows	0
+Duplicate rows (%)	0.0%
+------------------------------------------------------------------------------
+***********Resumen de las Variables contenidas en el dataset******************
+
+variable(Categorical): FECHA HECHO
+	Distinct	6098
+	Distinct (%)	32.7%
+	Missing	0
+	Missing (%)	0.0%
+------------------------------------------------------------------------------
+Variable(Real number): COD_DEPTO
+	Distinct	33
+	Distinct (%)	0.2%
+	Missing	0
+	Missing (%)	0.0%
+	Infinite	0
+	Infinite (%)	0.0%
+	Mean	37.58260916
+	Minimum	5
+	Maximum	99
+	Zeros	0
+	Zeros (%)	0.0%
+	Negative	0
+	Negative (%)	0.0%
+------------------------------------------------------------------------------
+Variable(Categorical): DEPARTAMENTO
+	Distinct	33
+		ANTIOQUIA	3139 
+		VALLE DEL CAUCA	1288 
+		BOGOTÁ D.C.	1227 
+		CESAR	1106 
+		SANTANDER	 1034
+		Other values (28)	1084
+	Distinct (%)	0.2%
+	Missing	0
+	Missing (%)	0.0%
+	8 
+------------------------------------------------------------------------------
+Variable(Categorical):COD_MUNI
+	Distinct	971
+		11,001	 1227
+		5,001	 699
+		76,001	 576
+		50,001	 420
+		47,001	 290
+		Other values (966)	15430
+	Distinct (%)	5.2%
+	Missing	0
+	Missing (%)	0.0%
+------------------------------------------------------------------------------	
+Variable(Categorical):MUNICIPIO
+	Distinct	902
+		BOGOTA, D.C.	 1227
+		MEDELLIN	 699
+		CALI	 576
+		VILLAVICENCIO	 420
+		SANTA MARTA	 290
+		Other values (897)	15430 
+	Distinct (%)	4.8%
+	Missing	0
+	Missing (%)	0.0%
+------------------------------------------------------------------------------	
+Variable(Categorical):TIPO DELITO
+	Distinct	2
+		SECUESTRO EXTORSIVO	11816 
+		SECUESTRO SIMPLE	6826 
+	Distinct (%)	< 0.1%
+	Missing	0
+	Missing (%)	0.0%
+------------------------------------------------------------------------------
+variable(Real number):CANTIDAD
+	Distinct	39
+	Distinct (%)	0.2%
+	Missing	0
+	Missing (%)	0.0%
+	Infinite	0
+	Infinite (%)	0.0%
+	Mean	1.45129278
+	Minimum	1
+	Maximum	156
+	Zeros	0
+	Zeros (%)	0.0%
+	Negative	0
+	Negative (%)	0.0%
+	
+------------------------------------------------------------------------------
+ Analisis del DataSet Homicidios:
+------------------------------------------------------------------------------
+Tipo de los datos
+
+DEPARTAMENTO            object
+MUNICIPIO               object
+CODIGO DANE              int64
+ARMAS MEDIOS            object
+FECHA HECHO             object
+GENERO                  object
+GRUPO ETARÍO            object
+DESCRIPCIÓN CONDUCTA    object
+CANTIDAD                 int64
+dtype: object
+------------------------------------------------------------------------------
+***********Resumen de las Variables contenidas en el dataset Homicidios******************
+------------------------------------------------------------------------------
+Number of variables	9
+	Categorical	7
+	Numeric	2
+Number of observations	59810
+Missing cells	0
+Missing cells (%)	0.0%
+Duplicate rows	5
+Duplicate rows (%)	< 0.1%
+------------------------------------------------------------------------------
+Variable(Categorical): DEPARTAMENTO
+	Distinct	32
+		CUNDINAMARCA	9026 
+		ANTIOQUIA	7800 
+		VALLE	7646 
+		SANTANDER	3076 
+		CESAR	 2457
+		Other values (27)	29805
+	Distinct (%)	0.1%
+	Missing	0
+	Missing (%)	0.0%
+------------------------------------------------------------------------------
+Variable(Categorical):MUNICIPIO
+	Distinct	969
+		BOGOTÁ D.C. (CT)	4809 
+		CALI (CT)	 	2853
+		MEDELLÍN (CT)	 	2712
+		BARRANQUILLA (CT)	904
+		CARTAGENA (CT)	 	889
+		Other values (964)	47643 
+	Distinct (%)	1.6%
+	Missing	0
+	Missing (%)	0.0%
+------------------------------------------------------------------------------
+Variable(Real number):CODIGO DANE
+	Distinct	1041
+	Distinct (%)	1.7%
+	Missing	0
+	Missing (%)	0.0%
+	Infinite	0
+	Infinite (%)	0.0%
+	Mean	38472459.81
+	Minimum	5001000
+	Maximum	99773000
+	Zeros	0
+	Zeros (%)	0.0%
+	Negative	0
+	Negative (%)	0.0%
+------------------------------------------------------------------------------
+Variable(Categorical):ARMAS MEDIOS
+	Distinct	7
+		VEHICULO	34319 
+		MOTO	18230 
+		NO REPORTADO	4536 
+		SIN EMPLEO DE ARMAS	 2096
+		BICICLETA	 552
+		Other values (2)	 77
+	Distinct (%)	< 0.1%
+	Missing	0
+	Missing (%)	0.0%
+------------------------------------------------------------------------------
+Variable(Categorical):FECHA HECHO
+	Distinct	4503
+		1/01/2022	 51
+		7/02/2021	 48
+		1/01/2021	 46
+		19/09/2021	 45
+		9/01/2022	 45
+		Other values (4498)	59575 
+	Distinct (%)	7.5%
+	Missing	0
+	Missing (%)	0.0%
+------------------------------------------------------------------------------
+Variable(Categorical):GENERO
+	Distinct	4
+		MASCULINO	47431 
+		FEMENINO	12319 
+		NO REPORTADO	 45
+		NO REPORTA	 15
+	Distinct (%)	< 0.1%
+	Missing	0
+	Missing (%)	0.0%
+------------------------------------------------------------------------------
+Variable(Categorical):GRUPO ETARÍO
+	Distinct	4
+		ADULTOS	54671 
+		ADOLESCENTES	 2924
+		MENORES	 2170
+		NO REPORTADO	 45
+	Distinct (%)	< 0.1%
+	Missing	0
+	Missing (%)	0.0%
+------------------------------------------------------------------------------
+Variable(Categorical):DESCRIPCIÓN CONDUCTA
+	Distinct	2
+		ARTÍCULO 109. HOMICIDIO CULPOSO ( EN ACCIDENTE DE TRÁNSITO)	59800 
+		ARTÍCULO 110. HOMICIDIO CULPOSO ( CIRCUNSTANCIAS DE AGRAVACIÓN)	 10
+	Distinct (%)	< 0.1%
+	Missing	0
+	Missing (%)	0.0%
+------------------------------------------------------------------------------
+Variable(Real number):CANTIDAD
+
+	Distinct	10
+	Distinct (%)	< 0.1%
+	Missing	0
+	Missing (%)	0.0%
+	Infinite	0
+	Infinite (%)	0.0%
+	Mean	1.098110684
+	Minimum	1
+	Maximum	10
+	Zeros	0
+	Zeros (%)	0.0%
+	Negative	0
+	Negative (%)	0.0%
+
 -------------------------------------------------------------------------------------------------------------
 
 
