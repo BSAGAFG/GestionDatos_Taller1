@@ -686,10 +686,65 @@ Para esta el medio mas utilizado es ARTEFACTO EXPLOSIVO/CARGA DINAMITA con un to
 géneros y grupos etarios que han estado involucrados en este tipo de
 delito? ¿Han variado con el paso de los años?
 
+Se realizo una seleccion de las categorias involucradas en este item por el unico dataset que tiene grupos etarios es Homicidios
+y contamos la cantidad de veces
+en las que un arma o medio se vio involucrado, dando como resultado lo siguiente:
+
+['MASCULINO' 'FEMENINO' 'NO REPORTA' 'NO REPORTADO']
+['MASCULINO', 'FEMENINO', 'NO REPORTA']
+[47431 12319    45    15]
+[47431, 12319, 60]
+
+Calculamos la proporcion y realizamos la grafica correspondiente en el codigo de python dando como resultado lo siguiente:
+
+Por genero:
+
+Masculino: 79.3 %
+Femenino: 20.6 %
+No reporta: 0.1 %
+
+Por grupo etario:
+
+Adultos: 91.4 %
+Adolecentes: 4.9 %
+Menores: 3.6 %
+Otros: 0.1 %
+
+Han variado con el paso de los años?
+
+
+
+
 2.4. [4%] ¿Se evidencia alguna tendencia para cometer dicho delito en algún
 mes particular del año?
+
+
 
 2.5. [4%] Para los casos en los que se disponga del detalle del delito o de una
 descripción, como por ejemplo en delitos sexuales y secuestro, ¿cuáles
 son las descripciones o modalidades más comunes?
 
+
+
+3. [25%] A partir de alguno de los conjuntos de datos seleccionados, visualice una
+serie de tiempo por año y mes que permita comparar la cantidad de delitos
+cometidos para los departamentos con mayor ocurrencia durante los últimos 5
+años. Para que los resultados entre departamentos sean comparables, es
+importante que normalice las cantidades obtenidas por cantidad de habitantes.
+En este archivo puede encontrar la población por departamento para el año
+2018. Asuma que la población no ha cambiado con el paso de los años.
+
+
+4. [30%] A partir de los conjuntos de datos seleccionados, construya un único
+dataset que integre la totalidad de los delitos ocurridos por departamento y
+municipio. Muestre los valores normalizados por cantidad de habitantes
+realizando un proceso similar al del punto anterior. En este archivo puede
+encontrar proyecciones anuales de las poblaciones por departamento. Utilice la
+proyección para el año en curso. Considere solamente los municipios con más
+de 1 millón de habitantes.
+
+
+
+5. [10%] Grabe un video de máximo 5 minutos en donde muestre el proceso
+realizado y los hallazgos más importantes de los diferentes análisis. Suba el
+video a YouTube. Todos los integrantes del equipo deben participar en el video.
