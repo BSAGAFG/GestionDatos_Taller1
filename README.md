@@ -712,13 +712,19 @@ Otros: 0.1 %
 
 Han variado con el paso de los años?
 
+Para el dataset de homicidios, realizamos un proceso de castear el tamaño de fecha y seleccionar solamente el año, posterior a esto
+realizamos una grafica para observar e comportamiento y notamos que hay un aumento en los casos hasta el año 2019, se ve una reduccion
+y nuevamente vuelve a incrementar el numero de homicidios en el 2021.
 
+Adicionalmente, realizamos un calculo de cantidad de homicidios por genero, donde el genero que mas data contiene es el Masculino.
+Se debe revisar el codigo de Python para mas detalle.
 
 
 2.4. [4%] ¿Se evidencia alguna tendencia para cometer dicho delito en algún
 mes particular del año?
 
-
+De acuerdo a la implementacion realizada, anotando que se tomaron los datos de 5 años aca, notamos que los meses en los que mayor tendencia
+de delitos se comenten es en el mes 11 y 12, osea noviembre y diciembre.
 
 2.5. [4%] Para los casos en los que se disponga del detalle del delito o de una
 descripción, como por ejemplo en delitos sexuales y secuestro, ¿cuáles
