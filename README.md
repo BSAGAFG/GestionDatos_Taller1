@@ -1,5 +1,9 @@
 # GestionDatos_Taller1
 Taller clase Fabian Peña, materia Gestion de Datos
+Presentado por: Norbey Marin
+				Bryan Leonardo Figueredo
+
+
 
 Los dataset seleccionados son:
 
@@ -570,13 +574,121 @@ Variable(Real number):CANTIDAD
 datos seleccionados:
 2.1. [4%] ¿Cuáles han sido los departamentos (TOP 3) más afectados en
 términos de cantidad de delitos cometidos en los últimos 5 años?
+
+Para esta secion, notamos que debemos realizar un casteo de la columna fecha, convirtiendola en formato fecha.
+Para esto, generamos una funcion como se muestra en el codigo, posterior a esto, calculamos la fecha mayor y
+realizmos una resta en años para tomar los ultimos 5, dando como resultado en los 4 dataset seleccionados
+lo siguiente:
+
+---------------------Secuestro-------------------------------
+DEPARTAMENTO
+VALLE DEL CAUCA    100
+ANTIOQUIA           92
+CAUCA               86
+Name: CANTIDAD, dtype: int64
+ 
+---------------------Homicidios-------------------------------
+DEPARTAMENTO
+CUNDINAMARCA    3945
+ANTIOQUIA       3755
+VALLE           3177
+Name: CANTIDAD, dtype: int64
+ 
+---------------------Extorcion-------------------------------
+DEPARTAMENTO
+ANTIOQUIA          6333
+BOGOTÁ D.C.        5472
+VALLE DEL CAUCA    4810
+Name: CANTIDAD, dtype: int64
+ 
+---------------------Terrorismo-------------------------------
+Departamento
+ANTIOQUIA             228
+NORTE DE SANTANDER    170
+ARAUCA                165
+Name: CANTIDAD, dtype: int64
+-------------------------------------
+
 2.2. [4%] Para los casos en los que aplique, ¿cuál ha sido el arma o medio
 más común para cometer el delito?
+
+Para este punto, revisamos inicialmente en cuales dataset aplica la pregunta, con esto descartamos el dataset de secuestro y extorcion. 
+Posterior a esto, realizamos una seleccion de las categorias involucradas en este item por dataset y contamos la cantidad de veces
+en las que un arma o medio se vio involucrado, dando como resultado lo siguiente:
+
+---------------------Categorias Homicidios-------------------------------
+['MOTO' 'VEHICULO' 'NO REPORTADO' 'BICICLETA' 'SIN EMPLEO DE ARMAS' 'TREN'
+ 'CONTUNDENTES']
+ 
+---------------------Cantidad por categoria------------------------------
+VEHICULO               34319
+MOTO                   18230
+NO REPORTADO            4536
+SIN EMPLEO DE ARMAS     2096
+BICICLETA                552
+TREN                      73
+CONTUNDENTES               4
+Name: ARMAS MEDIOS, dtype: int64
+ 
+ 
+Para esta el medio mas utilizado es VEHICULOS con un total de 34319
+ 
+---------------------Categorias Terrorismo-------------------------------
+['ARTEFACTO EXPLOSIVO/CARGA DINAMITA' 'ARTEFACTO INCENDIARIO'
+ 'GRANADA DE MANO' 'CILINDRO BOMBA' 'MINA ANTIPERSONA' 'COMBUSTIBLE'
+ 'OLLA BOMBA' 'PAQUETE BOMBA' '-' 'PETARDO PLANFETARIO' 'CARRO BOMBA'
+ 'PERSONA BOMBA' 'ROCKET' 'BICICLETA BOMBA' 'CANTINA BOMBA'
+ 'CABALLO BOMBA' 'MOTO BOMBA' 'GRANADA DE FUSIL' 'GRANADA DE MORTERO'
+ 'ARMA DE FUEGO' 'LANCHA BOMBA' 'CASA BOMBA' 'BALON BOMBA'
+ 'PAPA EXPLOSIVA' 'BURRO BOMBA' 'NO REPORTADO' 'CARTA BOMBA'
+ 'SIN EMPLEO DE ARMAS' 'ARMA BLANCA / CORTOPUNZANTE' 'CONTUNDENTES'
+ 'DIRECTA' 'PERRO BOMBA']
+ 
+---------------------Cantidad por  categoria-------------------------------
+ARTEFACTO EXPLOSIVO/CARGA DINAMITA    1638
+GRANADA DE MANO                        778
+COMBUSTIBLE                            330
+ARTEFACTO INCENDIARIO                  263
+ARMA DE FUEGO                          224
+NO REPORTADO                           160
+MINA ANTIPERSONA                       151
+PAQUETE BOMBA                           79
+CILINDRO BOMBA                          65
+SIN EMPLEO DE ARMAS                     65
+CARRO BOMBA                             47
+MOTO BOMBA                              30
+-                                       24
+GRANADA DE MORTERO                      23
+OLLA BOMBA                              19
+GRANADA DE FUSIL                        13
+PETARDO PLANFETARIO                      8
+BALON BOMBA                              6
+CONTUNDENTES                             5
+ROCKET                                   5
+PAPA EXPLOSIVA                           3
+CANTINA BOMBA                            3
+LANCHA BOMBA                             2
+CASA BOMBA                               2
+CABALLO BOMBA                            2
+ARMA BLANCA / CORTOPUNZANTE              2
+DIRECTA                                  2
+BICICLETA BOMBA                          1
+BURRO BOMBA                              1
+PERSONA BOMBA                            1
+CARTA BOMBA                              1
+PERRO BOMBA                              1
+Name: ARMAS MEDIOS, dtype: int64
+
+
+Para esta el medio mas utilizado es ARTEFACTO EXPLOSIVO/CARGA DINAMITA con un total de 1638
+
 2.3. [4%] Para los casos en los que aplique, ¿cómo ha sido la proporción de
 géneros y grupos etarios que han estado involucrados en este tipo de
 delito? ¿Han variado con el paso de los años?
+
 2.4. [4%] ¿Se evidencia alguna tendencia para cometer dicho delito en algún
 mes particular del año?
+
 2.5. [4%] Para los casos en los que se disponga del detalle del delito o de una
 descripción, como por ejemplo en delitos sexuales y secuestro, ¿cuáles
 son las descripciones o modalidades más comunes?
