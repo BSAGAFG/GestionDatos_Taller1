@@ -730,7 +730,8 @@ de delitos se comenten es en el mes 11 y 12, osea noviembre y diciembre.
 descripción, como por ejemplo en delitos sexuales y secuestro, ¿cuáles
 son las descripciones o modalidades más comunes?
 
-
+De acuerdo a la implementacion realizada, anotando que se tomaron los datos de 5 años aca, notamos que los tipo de delitos 
+que mas se comenten son por SECUESTRO EXTORSIVO.
 
 3. [25%] A partir de alguno de los conjuntos de datos seleccionados, visualice una
 serie de tiempo por año y mes que permita comparar la cantidad de delitos

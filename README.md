@@ -719,6 +719,9 @@ y nuevamente vuelve a incrementar el numero de homicidios en el 2021.
 Adicionalmente, realizamos un calculo de cantidad de homicidios por genero, donde el genero que mas data contiene es el Masculino.
 Se debe revisar el codigo de Python para mas detalle.
 
+Adicionalmente, realizamos un calculo de los grupos etarios, donde el genero que mas data contiene es el Masculino.
+Se debe revisar el codigo de Python para mas detalle.
+
 
 2.4. [4%] ¿Se evidencia alguna tendencia para cometer dicho delito en algún
 mes particular del año?
