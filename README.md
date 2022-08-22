@@ -772,6 +772,6 @@ Se realiza la limpieza de datos, sobre la columna de DEPARTAMENTO por que se enc
 realizado y los hallazgos más importantes de los diferentes análisis. Suba el
 video a YouTube. Todos los integrantes del equipo deben participar en el video.
 
-
+https://youtu.be/cRivJqXyKLE
 https://www.youtube.com/watch?v=v4MflBloh7A
 
