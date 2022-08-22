@@ -744,6 +744,11 @@ importante que normalice las cantidades obtenidas por cantidad de habitantes.
 En este archivo puede encontrar la población por departamento para el año
 2018. Asuma que la población no ha cambiado con el paso de los años.
 
+Al realizar la graficacion de los 5 ultimos años, sacando departamento y cantidad de homicidios, se valida que hay una caida en el nivel
+de homicidios en el año 2021.
+
+Revisar el codigo de python para ver el procedimiento realizado.
+
 
 4. [30%] A partir de los conjuntos de datos seleccionados, construya un único
 dataset que integre la totalidad de los delitos ocurridos por departamento y
@@ -754,7 +759,19 @@ proyección para el año en curso. Considere solamente los municipios con más
 de 1 millón de habitantes.
 
 
+Se realiza el proceso para integrar la totalidad de los delitos ocurridos por departamento y municipio.
+Revisar el codigo de python para ver el procedimiento realizado.
+
+Se toman las columnas fehca echo, departamento, municipio y cantidad. Posterior se manipula el documento de excel importado
+anexo-proyecciones-poblacion-Municipal_Area_2018-2035.xlsx. con este documento se filtra el año 2022 y se eligen los municipios
+que tienen mas de 1 millon de habitantes. Donde se identifican medelli, bogota, barranquilla, cartagena y cali,
+se buscan las mismas ciudades en el mismo año del dataframe concatenado.
+Se realiza la limpieza de datos, sobre la columna de DEPARTAMENTO por que se encuentran con nombres distintos.
 
 5. [10%] Grabe un video de máximo 5 minutos en donde muestre el proceso
 realizado y los hallazgos más importantes de los diferentes análisis. Suba el
 video a YouTube. Todos los integrantes del equipo deben participar en el video.
+
+
+https://www.youtube.com/watch?v=v4MflBloh7A
+
